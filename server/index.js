@@ -3,6 +3,7 @@ const express = require('express')
 const cors = require('cors')
 const cookieParser = require('cookie-parser')
 const mongoose = require('mongoose')
+const models = require('./models/model')
 const router = require('./router/index')
 const errorMiddleware = require('./middlewares/error-middleware')
 
