@@ -1,4 +1,5 @@
 const userService = require('../service/user-service')
+const Basket = require('../models/basket')
 const {validationResult} = require('express-validator')
 const ApiError = require('../exceptions/api-error')
 
@@ -12,6 +13,7 @@ class UserController{
             }
             const {email, password} = req.body
             const userData = await userService.registraion(email, password)
+            const basket = await Basket.create({userId: userData.user.id})
             res.cookie('refreshToken', userData.refreshToken, {maxAge: 17 * 60 * 1000, httpOnly: true})
             return res.json(userData)
         }catch(e){
