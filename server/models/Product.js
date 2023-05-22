@@ -6,7 +6,7 @@ const ProductSchema = new Schema({
     price:{type: Number, required: true},
     img:{type: String, required: true},
     typeId: {type: String, required: true},
-    productInfo: {type: String, required: false}
+    productInfo: {type: String}
 })
 
 module.exports = model('Product', ProductSchema)
