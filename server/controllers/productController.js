@@ -40,11 +40,11 @@ class ProductController{
         const {typeId} = req.query
         let products;
         if(!typeId){
-            products = await Product.find()
+            products = await product.find()
         }
 
         if(typeId){
-            products = await Product.find({typeId})
+            products = await product.find({typeId})
         }
 
         return res.json(products)
