@@ -1,10 +1,11 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 
 const Shop = () =>{
     return(
-        <div>
+        <BrowserRouter>
             Shop
-        </div>
+        </BrowserRouter>
     )
 }
 

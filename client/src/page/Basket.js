@@ -1,11 +1,12 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 
 const Basket = () =>{
     return(
-        <div>
+        <BrowserRouter>
             Basket
-        </div>
+        </BrowserRouter>
     )
 }
 
-export default Auth
+export default Basket

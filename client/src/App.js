@@ -1,10 +1,11 @@
-import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './components/AppRouter';
 
 const App = () => {
-  return(
-    <div>
-      working
-    </div>
+  return (
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   )
 }
 
