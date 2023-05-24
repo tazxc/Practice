@@ -4,6 +4,7 @@ const product = require('../models/Product')
 const productInfo = require('../models/productInfo')
 const ApiError = require('../exceptions/api-error')
 
+
 class ProductController{
     async create(req, res, next){
         try{
@@ -36,6 +37,8 @@ class ProductController{
         
     }
 
+    
+
     async getAll(req, res){
         const {typeId} = req.query
         let products;
@@ -57,5 +60,6 @@ class ProductController{
         return res.json(product)
     }
 }
+
 
 module.exports = new ProductController()
