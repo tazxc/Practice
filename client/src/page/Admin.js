@@ -1,10 +1,10 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Router } from 'react-router-dom'
 
 const Admin = () =>{
     return(
         <BrowserRouter>
-            Shop
+            Admin
         </BrowserRouter>
     )
 }
