@@ -3,9 +3,9 @@ import { BrowserRouter } from 'react-router-dom'
 
 const ProductPage = () =>{
     return(
-        <BrowserRouter>
+        <div>
             ProductPage
-        </BrowserRouter>
+        </div>
     )
 }
 

@@ -3,9 +3,9 @@ import { BrowserRouter, Router } from 'react-router-dom'
 
 const Admin = () =>{
     return(
-        <BrowserRouter>
+        <div>
             Admin
-        </BrowserRouter>
+        </div>
     )
 }
 

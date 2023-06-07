@@ -3,9 +3,9 @@ import { BrowserRouter } from 'react-router-dom'
 
 const Basket = () =>{
     return(
-        <BrowserRouter>
+        <div>
             Basket
-        </BrowserRouter>
+        </div>
     )
 }
 
