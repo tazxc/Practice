@@ -24,7 +24,7 @@ export default class ProductStore{
         this._products = products
     }
 
-    setSelectedType(){
+    setSelectedType(type) {
         this._selectedType = type
     }
 
