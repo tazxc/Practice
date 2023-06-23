@@ -7,19 +7,21 @@ import Navbar from 'react-bootstrap/Navbar';
 import { SHOP_ROUTE } from "../utils/consts";
 import { NavLink } from "react-router-dom";
 import {observer} from 'mobx-react-lite'
+import UserStore from "../store/UserStore";
 
 
 
 const NavBar = observer(() => {
-    const { user } = useContext(Context);
+    const {user} = useContext(Context);
     return (
         <Navbar bg="dark" data-bs-theme="dark">
             <Container>
-                <NavLink style={{ color: 'white' }} to={SHOP_ROUTE}>Coffee</NavLink>
-                {user.isAuth ?
+                <NavLink style={{ color: 'white', textDecoration: 'none' }} to={SHOP_ROUTE}>Coffee</NavLink>
+                {user.IsAuth?
                     <Nav className="ml-auto" style={{ color: 'white' }}>
-                        <Button variant={"outline-light"}>Админ панель</Button>
-                        <Button variant={"outline-light"} className="ml-2">Войти</Button>
+                        <Button variant={"outline-light"} >Админ панель</Button>
+                        <Button variant={"outline-light"} className="ms-2">Выйти</Button>
+                        
                     </Nav>
                     :
                     <Nav className="ml-auto" style={{ color: 'white' }}>
