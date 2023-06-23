@@ -12,7 +12,7 @@ export default class ProductStore{
             {id: 1, name: 'Латте', price: 1200},
             {id: 2, name: 'Липтон', price: 1200}
         ]
-        this.setSelectedType = {}
+        this._selectedType = {}
         makeAutoObservable(this)
     }
 
