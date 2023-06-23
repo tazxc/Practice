@@ -3,9 +3,9 @@ import { BrowserRouter } from 'react-router-dom'
 
 const Auth = () =>{
     return(
-        <Container className="d-flex">
+        <div>
             AUTH
-        </Container>
+        </div>
     )
 }
 
