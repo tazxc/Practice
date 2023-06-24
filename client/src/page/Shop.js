@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
 import { BrowserRouter } from 'react-router-dom'
 import TypeBar from '../components/TypeBar'
+import ProductBar from '../components/ProductBar'
+import ProductList from '../components/ProductList'
 
 const Shop = () =>{
     return(
@@ -13,7 +15,8 @@ const Shop = () =>{
                     <TypeBar />
                 </Col>
                 <Col md={9}>
-                    
+                    <ProductBar/>
+                    <ProductList/>
                 </Col>
             </Row>
         </Container>
