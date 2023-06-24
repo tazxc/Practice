@@ -9,10 +9,10 @@ export default class ProductStore{
             {id: 4, name: 'Кексы'},
         ]
         this._positions = [
-            {id: 1, name: 'Латте', price: 1200, img: 'https://www.manusurf.com/wp-content/uploads/2014/07/placehold.it-500x750b.gif'},
-            {id: 2, name: 'Липтон', price: 1200, img: 'https://www.manusurf.com/wp-content/uploads/2014/07/placehold.it-500x750b.gif'},
-            {id: 3, name: 'АйсРаф', price: 1200, img: 'https://www.manusurf.com/wp-content/uploads/2014/07/placehold.it-500x750b.gif'},
-            {id: 4, name: 'Капучино', price: 1200, img: 'https://www.manusurf.com/wp-content/uploads/2014/07/placehold.it-500x750b.gif'},
+            {id: 1, name: 'Латте', price: 1200, img: 'https://assets.avtocod.ru/storage/images/articles/nado-li-prado-obzor-vnedorozhnika-v-kuzove-150/Prado.jpg'},
+            {id: 2, name: 'Липтон', price: 1200, img: 'https://assets.avtocod.ru/storage/images/articles/nado-li-prado-obzor-vnedorozhnika-v-kuzove-150/Prado.jpg'},
+            {id: 3, name: 'АйсРаф', price: 1200, img: 'https://assets.avtocod.ru/storage/images/articles/nado-li-prado-obzor-vnedorozhnika-v-kuzove-150/Prado.jpg'},
+            {id: 4, name: 'Капучино', price: 1200, img: 'https://assets.avtocod.ru/storage/images/articles/nado-li-prado-obzor-vnedorozhnika-v-kuzove-150/Prado.jpg'},
         ]
         this._selectedType = {}
         this._selectedPosition = {}
