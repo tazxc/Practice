@@ -30,7 +30,7 @@ export const publicRoutes = [
         element: <Auth />
     },
     {
-        path: PRODUCT_ROUTE + '/id',
+        path: PRODUCT_ROUTE + '/:id',
         element: <ProductPage />
     }
 ]
