@@ -7,7 +7,7 @@ import { Context } from '../index'
 
 const AppRouter = () => {
     const {user} = useContext(Context)
-    const isAuth = true
+    const isAuth = false
     console.log(user)
     return (
 

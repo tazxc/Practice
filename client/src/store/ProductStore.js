@@ -5,15 +5,13 @@ export default class ProductStore{
         this._types = [
             {id: 1, name: 'Чай'},
             {id: 2, name: 'Кофе'},
-            {id: 3, name: 'Печенье'},
-            {id: 4, name: 'Кексы'},
+            {id: 3, name: 'Закуски'},
         ]
 
         this._positions = [
-            {id: 1, name: 'С сиропами'},
-            {id: 2, name: 'Липтон'},
-            {id: 3, name: 'АйсРаф'},
-            {id: 4, name: 'Капучино'},
+            {id: 1, name: 'Липтон'},
+            {id: 2, name: 'Нэскафе'},
+            {id: 3, name: 'Коктейли'},
         ]
 
         this._products = [
