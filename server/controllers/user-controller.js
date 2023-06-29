@@ -9,7 +9,7 @@ class UserController{
         try{
             const errors = validationResult(req)
             if(!errors.isEmpty()){
-                return next(ApiError.BadRequest('Ошибка валидации', errors.array()))
+                return next(ApiError.BadRequest('Пароль должен быть не более 16 символов и не менее 8. Обязательны символы число, заглавные и строчные символы.', errors.array()))
             }
             const {email, password} = req.body
             const userData = await userService.registraion(email, password)
@@ -71,6 +71,8 @@ class UserController{
             next(e)
         }
     }
+
+    
 
 }
 

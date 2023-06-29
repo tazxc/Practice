@@ -14,6 +14,11 @@ import { useNavigate } from "react-router-dom";
 const NavBar = observer(() => {
     const {user} = useContext(Context);
     const history = useNavigate()
+
+    const logOut = () =>{
+        user.setIsAuth(false)
+    }
+
     return (
         <Navbar bg="dark" data-bs-theme="dark">
             <Container>
@@ -26,14 +31,14 @@ const NavBar = observer(() => {
                         >Админ панель</Button>
                         <Button 
                             variant={"outline-light"} 
-                            onClick={() => history(LOGIN_ROUTE)} 
+                            onClick={() => logOut()} 
                             className="ms-2"
                         >Выйти</Button>
                         
                     </Nav>
                     :
                     <Nav className="ml-auto" style={{ color: 'white' }}>
-                        <Button variant={"outline-light"} onClick={() => user.setIsAuth(true)}>Авторизация</Button>
+                        <Button variant={"outline-light"} onClick={() => history(LOGIN_ROUTE)}>Авторизация</Button>
                     </Nav>
                 }
             </Container>

@@ -14,7 +14,7 @@ class UserService{
         if(candidate){
             throw ApiError.BadRequest(`Пользователь с почтовым адресом ${email} уже существует`)
         }
-        const hashPassword = await bcrypt.hash(password, 3)
+        const hashPassword = await bcrypt.hash(password, 8)
         const activationLink = uuid.v4()
 
         const user = await UserModel.create({email, password: hashPassword, activationLink})
